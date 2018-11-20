@@ -12,7 +12,6 @@ watchOptions = {
   maximumAge: 0
 };
 
-
 // Lets put all our map options in a single object
 var options = {
 	lat: 0,
