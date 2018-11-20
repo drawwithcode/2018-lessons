@@ -1,17 +1,16 @@
 var myMap;
 var canvas;
 var myLoc;
-var mappa = new Mappa('Leaflet');
-
+var mappa = new Mappa('MapboxGL', 'pk.eyJ1IjoibWlraW1hIiwiYSI6IjNvWUMwaUEifQ.Za_-O03W3UdQxZwS3bLxtg');
 
 // Lets put all our map options in a single object
 var options = {
 	lat: 0,
 	lng: 0,
-	zoom: 4,
-	style: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+	zoom: 8,
+	style: 'mapbox://styles/mapbox/traffic-night-v2',
+	pitch: 50
 }
-
 function preload(){
   // put preload code here
   myLoc = getCurrentPosition();
